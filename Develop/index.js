@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = [
     {
         type:'input',
@@ -17,7 +17,7 @@ const questions = [
     },
     {
         type:'input',
-        message:'What are the steps required to install your project? \n Use ";" to seperate each steps, no space between each steps.',
+        message:'What are the steps required to install your project? \n Use ";" to seperate each steps.',
         name:'installation',
     },
     {
@@ -27,22 +27,22 @@ const questions = [
     },
     {
         type:'input',
-        message:'Please enter the url for the screenshot for the project',
+        message:'Please enter the url for the screenshot for the project: ',
         name:'usageScreenshot',
     },
     {
         type:'input',
-        message:'List your collaborators, if any, with links to their GitHub profiles. \n Use ";" to seperate each person. no space between each steps.(name: githublink;)',
+        message:'List your collaborators, if any, with links to their GitHub profiles. \n Use ";" to seperate each person.(name: githublink;)',
         name:'creditsForCollaborators',
     },
     {
         type:'input',
-        message:'If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.\n Use ";" to seperate each recources. no space between each steps.(Resource name: resource link;)',
+        message:'If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.\n Use ";" to seperate each recources.(Resource name: resource link;)',
         name:'creditsForResources',
     },
     {
         type:'input',
-        message:'Guideline for users to test this project: \n Use ";" to seperate each steps. no space between each steps.',
+        message:'Guideline for users to test this project: \n Use ";" to seperate each steps.',
         name:'test',
     },
     {
@@ -53,7 +53,7 @@ const questions = [
     },
     {
         type:'input',
-        message:'If your project has a lot of features, list them here.\n Use ";" to seperate each features. no space between each steps.',
+        message:'If your project has a lot of features, list them here.\n Use ";" to seperate each features.',
         name:'features',
     },
     {
@@ -73,14 +73,13 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+// Create a function to write README file
 function writeToFile(data) {
-    // const fileName = `${data.projectTitle.split(' ').join('')}.md`;
     fs.writeFile('README.md',`${generateMarkdown(data)}`, (err) =>
       err ? console.error(err) : console.log('Success!'))
 }
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((data)=>writeToFile(data));
 }
