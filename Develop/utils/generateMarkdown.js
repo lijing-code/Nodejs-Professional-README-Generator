@@ -1,14 +1,6 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
 
 // Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -20,6 +12,7 @@ function generateMarkdown(data) {
     return bulletPoint;
   }
   return `# ${data.projectTitle}
+  ![${data.license}](https://img.shields.io/static/v1?label=license&message=${data.license}&color=brightgreen&style=plastic&logo=appveyor)
   ---
   ## Description
   ${data.description}
@@ -30,18 +23,25 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
+  - [Features](#license)
+  - [How to Contribute](#license)
+  - [Tests](#license)
+  - [Questions](#license)
   ---
   ## Installation
   ${formatTheAnswer(data.installation)}
   ## Usage
   ${data.usage}
   ![screenshot](${data.usageScreenshot})
+  ---
   ## Credits
-  ### People
+  ---
   ${formatTheAnswer(data.creditsForCollaborators)}
-  ### Resource
+  ---
   ${formatTheAnswer(data.creditsForResources)}
+  ---
   ## License
+  This project is using ${data.license} license:
   ![${data.license}](https://img.shields.io/static/v1?label=license&message=${data.license}&color=brightgreen&style=plastic&logo=appveyor)
   ## Features
   ${formatTheAnswer(data.features)}
