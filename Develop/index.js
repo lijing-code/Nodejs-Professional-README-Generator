@@ -68,7 +68,7 @@ const questions = [
     },
     {
         type:'input',
-        message:'What is your email',
+        message:'What is your email?',
         name:'email',
     },
 ];

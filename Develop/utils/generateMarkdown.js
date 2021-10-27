@@ -25,7 +25,7 @@ function generateMarkdown(data) {
   ${data.description}
   ---
   ## Table of Contents 
-  - Link of the repo: ![${data.projectTitle}](https://github.com/${data.username}/${data.projectTitle})
+  - Link of the repo: https://github.com/${data.username}/${data.projectTitle}
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
@@ -51,7 +51,7 @@ function generateMarkdown(data) {
   ## Tests
   ${formatTheAnswer(data.test)}
   ## Questions
-  - My GitHub is ![${data.username}](https://github.com/${data.username}), please feel free to ask me if you have any question about my project.
+  - My GitHub is https://github.com/${data.username}, please feel free to ask me if you have any question about my project.
   - My email is ${data.email}.
 `;
 }
