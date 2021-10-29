@@ -7,6 +7,7 @@ function generateMarkdown(data) {
     list.forEach((item)=> {bulletPoint+=`* ${item}\n`});
     return bulletPoint;
   }
+  // A function to set up the README Generator Framework
   return `# ${data.projectTitle}
   ![${data.license}](https://img.shields.io/static/v1?label=license&message=${data.license}&color=brightgreen&style=plastic&logo=appveyor)
   ---
@@ -15,6 +16,7 @@ function generateMarkdown(data) {
   ---
   ## Table of Contents 
   - Link of the repo: https://github.com/${data.username}/${data.projectTitle}
+  - [Description](#Description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
@@ -27,7 +29,7 @@ function generateMarkdown(data) {
   ## Installation
   ${formatTheAnswer(data.installation)}
   ## Usage
-  ${data.usage}
+  ${formatTheAnser(data.usage)}
   ![screenshot](${data.usageScreenshot})
   ---
   ## Credits
