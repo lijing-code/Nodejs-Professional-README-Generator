@@ -1,7 +1,3 @@
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
 // Create a function to generate markdown for README
 function generateMarkdown(data) {
   // A function to change the format of each user's answer, make a clearly bulletpoints in README.md
