@@ -23,9 +23,9 @@
   * Install npm
   * Answer the questions in the terminal
   * Generate README
-
+  ---
   ## Usage
-  
+  <img width="1260" alt="截屏2021-10-28 下午8 30 19" src="https://user-images.githubusercontent.com/68092036/139354100-d1bcc126-ae2b-480d-bd0f-bb541fbb9fd5.png">
   ---
   ## Credits
   ---
