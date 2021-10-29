@@ -35,11 +35,10 @@
   This project is using MIT license:
   ![MIT](https://img.shields.io/static/v1?label=license&message=MIT&color=brightgreen&style=plastic&logo=appveyor)
   ## Features
-  * 
+  *  Generate a project README through terminal using Node.js without worring about the format and framework.
 
   ## How to Contribute
-  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
-  * 
+  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md) 
 
   ## Tests
   * Gitpull this folder to your local computer
